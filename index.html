@@ -8,18 +8,153 @@
     <title>X. It's what's Happening / X</title>
   </head>
   <body class="dark:bg-black">
-    <h1 class="text-blue-400 dark:text-white">Building X</h1>
+    <div class="container px-10 py-8 grid md:grid-cols-2">
+      <!-- Header container X logo -->
+      <header>
+        <div class="logo-box w-full">
+          <!-- on light background -->
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="w-12 dark:hidden">
+            <g>
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              ></path>
+            </g>
+          </svg>
 
-    <svg
-      viewBox="0 0 24 24"
-      aria-hidden="true"
-      class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-k200y r-1nao33i r-5sfk15 r-kzbkwu"
-    >
-      <g>
-        <path
-          d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-        ></path>
-      </g>
-    </svg>
+          <!-- logo on white background -->
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            class="w-12 hidden dark:block"
+          >
+            <g>
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                fill="#ffffff"
+                stroke="#000000"
+                stroke-width="0.2"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </header>
+      <!-- Right side  -->
+      <main>
+        <h1
+          class="font-montserrat text-5xl font-bold my-12 dark:text-xlightext smd:text-7xl"
+        >
+          Happening now
+        </h1>
+
+        <div class="signup flex justify-start flex-col gap-x-2">
+          <h2 class="mb-5 font-bold text-2xl font-roboto dark:text-xlightext">
+            Join today.
+          </h2>
+          <div class="signup-btn-box flex flex-col gap-2 w-4/5 md:1/2">
+            <!-- signup buttons -->
+            <div
+              class="p-1.5 flex justify-center shrink-0 items-center gray-border dark:bg-xlightext"
+            >
+              <img
+                src="img/gmailavatar.jpg"
+                alt="User Gmail Profile Picture"
+                class="w-8 rounded-full inline-block mr-2"
+              />
+              <span class="flex flex-col">
+                <p class="signin-as text-xs font-bold">
+                  Sign in as Michael Ngbede
+                </p>
+                <p class="signin-email text-xs">exampleemail@gmail.com</p>
+              </span>
+              <img
+                src="img/google-icon.png"
+                alt="Google Icon"
+                class="w-8 ml-auto"
+              />
+            </div>
+            <div
+              class="py-2 flex items-center justify-center gray-border dark:bg-xlightext"
+            >
+              <img
+                src="img/apple-icon.png"
+                alt="Apple Icon"
+                class="mr-2 w-6 inline-block"
+              />
+              <p class="signin-as text-md font-bold">Sign up with Apple</p>
+            </div>
+          </div>
+          <!-- The OR separator -->
+          <div class="my-3 flex gap-2 w-4/5 items-center">
+            <span
+              class="inline-block h-0.5 w-3/5 bg-gray-100 dark:bg-gray-800"
+            ></span>
+            <span class="dark:text-xlightext">or</span>
+            <span
+              class="inline-block h-0.5 w-3/5 bg-gray-100 dark:bg-gray-800"
+            ></span>
+          </div>
+          <!-- create account  -->
+          <div>
+            <button
+              class="bg-xprimary w-4/5 py-2 text-white font-semibold rounded-4xl cursor-pointer"
+            >
+              Create account
+            </button>
+            <p
+              class="text-xs font-light mt-2 w-4/5 text-gray-800 dark:text-gray-300"
+            >
+              By signing up, you agree to the
+              <span class="text-xprimary">Terms of Service</span> and
+              <span class="text-xprimary">Privacy Policy</span>, including
+              <span class="text-xprimary">Cookie Use.</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Already have account -->
+        <div class="mt-10 w-4/5">
+          <p class="text-lg font-bold text-black mb-5 dark:text-xlightext">
+            Already have an account?
+          </p>
+          <button class="gray-border py-2 w-full">
+            <span class="text-xprimary font-semibold">Sign in</span>
+          </button>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="mt-15">
+        <nav class="footer text-gray-500">
+          <ul
+            class="text-sm/4 flex gap-3 flex-wrap items-center justify-center"
+          >
+            <li class="footer-menu-item"><a href="#">About</a></li>
+            <li class="footer-menu-item"><a href="#">Download the X app</a></li>
+            <li class="footer-menu-item"><a href="#">Help center</a></li>
+            <li class="footer-menu-item"><a href="#">Terms of Service</a></li>
+            <li class="footer-menu-item"><a href="#">Privacy Policy</a></li>
+            <li class="footer-menu-item"><a href="#">Cookie Policy</a></li>
+            <li class="footer-menu-item"><a href="#">Accessibility</a></li>
+            <li class="footer-menu-item"><a href="#">Ads info</a></li>
+            <li class="footer-menu-item"><a href="#">Blog</a></li>
+            <li class="footer-menu-item"><a href="#">Careers</a></li>
+            <li class="footer-menu-item"><a href="#">Brand Resources</a></li>
+            <li class="footer-menu-item"><a href="#">Advertising</a></li>
+            <li class="footer-menu-item"><a href="#">Marketing</a></li>
+            <li class="footer-menu-item"><a href="#">X for Business</a></li>
+            <li class="footer-menu-item"><a href="#">Developers</a></li>
+            <li class="footer-menu-item"><a href="#">Directory</a></li>
+            <li class="footer-menu-item"><a href="#">Settings</a></li>
+            <li class="footer-menu-item">
+              <a href="#"
+                >&copy;<span class="pr-1 current-year"></span>X Corp</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
