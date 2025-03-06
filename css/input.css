@@ -14,6 +14,7 @@ Count border: #e74c3c
 @theme {
   --color-xprimary: #1d9bf0;
   --color-xlightext: #e7e9ea;
+  --color-reactions: #f91880;
   --font-lato: "Lato", serif;
   --font-roboto: "Roboto", sans-serif;
   --font-montserrat: "Montserrat", serif;
