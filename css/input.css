@@ -21,6 +21,7 @@ Count border: #e74c3c
 
   /* breakpoint for 500px (31.25rem) */
   --breakpoint-smd: 31.25rem;
+  --breakpoint-mmd: 62.5rem;
 }
 
 /* .or {
@@ -28,4 +29,8 @@ Count border: #e74c3c
 } */
 .gray-border {
   @apply border border-gray-300 rounded-full;
+}
+
+.premium-bg {
+  @apply bg-gradient-to-r from-indigo-500 via-purple-700 to-purple-800;
 }

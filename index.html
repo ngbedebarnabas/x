@@ -8,125 +8,140 @@
     <title>X. It's what's Happening / X</title>
   </head>
   <body class="dark:bg-black">
-    <div class="container px-10 py-8 grid md:grid-cols-2">
-      <!-- Header container X logo -->
-      <header>
-        <div class="logo-box w-full">
-          <!-- on light background -->
-          <svg viewBox="0 0 24 24" aria-hidden="true" class="w-12 dark:hidden">
-            <g>
-              <path
-                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-              ></path>
-            </g>
-          </svg>
-
-          <!-- logo on white background -->
-          <svg
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-            class="w-12 hidden dark:block"
-          >
-            <g>
-              <path
-                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                fill="#ffffff"
-                stroke="#000000"
-                stroke-width="0.2"
-              ></path>
-            </g>
-          </svg>
-        </div>
-      </header>
+    <div
+      class="container px-10 mmd:w-dvw mmd:px-5 py-8 h-screen mmd:flex mmd:flex-col mmd:justify-between my-0 mx-auto"
+    >
       <!-- Right side  -->
-      <main>
-        <h1
-          class="font-montserrat text-5xl font-bold my-12 dark:text-xlightext smd:text-7xl"
-        >
-          Happening now
-        </h1>
+      <main class="mmd:pt-25 mmd:flex mmd:justify-center mmd:items-center">
+        <!-- Header container X logo -->
+        <header class="mmd:w-3/5 mmd:flex items-center align-middle">
+          <div class="logo-box w-full mmd:flex mmd:justify-center">
+            <!-- on light background -->
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              class="w-12 mmd:w-90 dark:hidden"
+            >
+              <g>
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                ></path>
+              </g>
+            </svg>
 
-        <div class="signup flex justify-start flex-col gap-x-2">
-          <h2 class="mb-5 font-bold text-2xl font-roboto dark:text-xlightext">
-            Join today.
-          </h2>
-          <div class="signup-btn-box flex flex-col gap-2 w-4/5 md:1/2">
-            <!-- signup buttons -->
-            <div
-              class="p-1.5 flex justify-center shrink-0 items-center gray-border dark:bg-xlightext"
+            <!-- logo on white background -->
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              class="w-12 mmd:w-90 hidden dark:block"
             >
-              <img
-                src="img/gmailavatar.jpg"
-                alt="User Gmail Profile Picture"
-                class="w-8 rounded-full inline-block mr-2"
-              />
-              <span class="flex flex-col">
-                <p class="signin-as text-xs font-bold">
-                  Sign in as Michael Ngbede
-                </p>
-                <p class="signin-email text-xs">exampleemail@gmail.com</p>
-              </span>
-              <img
-                src="img/google-icon.png"
-                alt="Google Icon"
-                class="w-8 ml-auto"
-              />
-            </div>
-            <div
-              class="py-2 flex items-center justify-center gray-border dark:bg-xlightext"
-            >
-              <img
-                src="img/apple-icon.png"
-                alt="Apple Icon"
-                class="mr-2 w-6 inline-block"
-              />
-              <p class="signin-as text-md font-bold">Sign up with Apple</p>
-            </div>
+              <g>
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  fill="#ffffff"
+                  stroke="#000000"
+                  stroke-width="0.2"
+                ></path>
+              </g>
+            </svg>
           </div>
-          <!-- The OR separator -->
-          <div class="my-3 flex gap-2 w-4/5 items-center">
-            <span
-              class="inline-block h-0.5 w-3/5 bg-gray-100 dark:bg-gray-800"
-            ></span>
-            <span class="dark:text-xlightext">or</span>
-            <span
-              class="inline-block h-0.5 w-3/5 bg-gray-100 dark:bg-gray-800"
-            ></span>
-          </div>
-          <!-- create account  -->
-          <div>
-            <button
-              class="bg-xprimary w-4/5 py-2 text-white font-semibold rounded-4xl cursor-pointer"
-            >
-              Create account
-            </button>
-            <p
-              class="text-xs font-light mt-2 w-4/5 text-gray-800 dark:text-gray-300"
-            >
-              By signing up, you agree to the
-              <span class="text-xprimary">Terms of Service</span> and
-              <span class="text-xprimary">Privacy Policy</span>, including
-              <span class="text-xprimary">Cookie Use.</span>
-            </p>
-          </div>
-        </div>
+        </header>
 
-        <!-- Already have account -->
-        <div class="mt-10 w-4/5">
-          <p class="text-lg font-bold text-black mb-5 dark:text-xlightext">
-            Already have an account?
-          </p>
-          <button class="gray-border py-2 w-full">
-            <span class="text-xprimary font-semibold">Sign in</span>
-          </button>
+        <div class="mmd:w-2/5 mmd:flex mmd:flex-col items-start justify-center">
+          <h1
+            class="font-roboto text-6xl font-bold my-12 dark:text-xlightext smd:text-6xl mmd:text-7xl"
+          >
+            Happening now
+          </h1>
+
+          <div class="signup flex justify-start flex-col gap-x-2">
+            <h2 class="mb-5 font-bold text-2xl font-roboto dark:text-xlightext">
+              Join today.
+            </h2>
+            <div class="signup-btn-box flex flex-col gap-2 w-4/5 mmd:w-3/5">
+              <!-- signup buttons -->
+              <a
+                href="home.html"
+                class="p-1.5 w-full flex justify-center self-start flex-none gray-border dark:bg-xlightext cursor-pointer"
+              >
+                <img
+                  src="img/gmailavatar.jpg"
+                  alt="User Gmail Profile Picture"
+                  class="w-8 rounded-full inline-block mr-2"
+                />
+                <span class="flex flex-col">
+                  <p class="signin-as text-xs font-bold">
+                    Sign in as Michael Ngbede
+                  </p>
+                  <p class="signin-email text-xs">exampleemail@gmail.com</p>
+                </span>
+                <img
+                  src="img/google-icon.png"
+                  alt="Google Icon"
+                  class="w-8 ml-auto"
+                />
+              </a>
+              <a
+                href="home.html"
+                class="p-2 w-full flex items-center self-start flex-none justify-center gray-border dark:bg-xlightext cursor-pointer"
+              >
+                <img
+                  src="img/apple-icon.png"
+                  alt="Apple Icon"
+                  class="mr-2 w-6 inline-block"
+                />
+                <p class="signin-as text-md font-bold">Sign up with Apple</p>
+              </a>
+            </div>
+            <!-- The OR separator -->
+            <div class="my-3 flex gap-2 w-4/5 mmd:w-3/5 items-center">
+              <span
+                class="inline-block h-0.5 w-3/5 bg-gray-100 dark:bg-gray-800"
+              ></span>
+              <span class="dark:text-xlightext">or</span>
+              <span
+                class="inline-block h-0.5 w-3/5 bg-gray-100 dark:bg-gray-800"
+              ></span>
+            </div>
+            <!-- create account  -->
+            <div class="w-4/5 mmd:w-3/5">
+              <a
+                href="#"
+                class="inline-block text-center w-full bg-xprimary py-2 self-start flex-none text-white font-semibold rounded-4xl cursor-pointer btn-create-account"
+              >
+                Create account
+              </a>
+              <p
+                class="text-xs font-light mt-2 text-gray-800 dark:text-gray-300"
+              >
+                By signing up, you agree to the
+                <span class="text-xprimary">Terms of Service</span> and
+                <span class="text-xprimary">Privacy Policy</span>, including
+                <span class="text-xprimary">Cookie Use.</span>
+              </p>
+            </div>
+
+            <!-- Already have account -->
+            <div class="mt-10 w-4/5 mmd:w-3/5">
+              <p class="text-lg font-bold text-black mb-5 dark:text-xlightext">
+                Already have an account?
+              </p>
+              <a
+                href="home.html"
+                class="inline-block gray-border w-full cursor-pointer py-2 text-center"
+              >
+                <span class="text-xprimary font-semibold">Sign in</span>
+              </a>
+            </div>
+          </div>
         </div>
       </main>
 
       <!-- Footer -->
-      <footer class="mt-15">
+      <footer class="w-full p-2 mt-10 self-end">
         <nav class="footer text-gray-500">
           <ul
-            class="text-sm/4 flex gap-3 flex-wrap items-center justify-center"
+            class="w-full text-xs/4 mmd:text-sm flex gap-2 flex-wrap items-center justify-center"
           >
             <li class="footer-menu-item"><a href="#">About</a></li>
             <li class="footer-menu-item"><a href="#">Download the X app</a></li>
