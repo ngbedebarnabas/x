@@ -196,17 +196,11 @@
   }
 }
 @layer utilities {
-  .collapse {
-    visibility: collapse;
-  }
   .absolute {
     position: absolute;
   }
   .relative {
     position: relative;
-  }
-  .sticky {
-    position: sticky;
   }
   .-top-1 {
     top: calc(var(--spacing) * -1);
@@ -301,35 +295,20 @@
   .inline-block {
     display: inline-block;
   }
-  .inline-flex {
-    display: inline-flex;
-  }
-  .list-item {
-    display: list-item;
-  }
-  .table {
-    display: table;
-  }
-  .h-0 {
-    height: calc(var(--spacing) * 0);
-  }
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
   }
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
-  .h-30 {
-    height: calc(var(--spacing) * 30);
+  .h-20 {
+    height: calc(var(--spacing) * 20);
   }
   .h-screen {
     height: 100vh;
   }
   .w-2 {
     width: calc(var(--spacing) * 2);
-  }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
   }
   .w-3\/5 {
     width: calc(3/5 * 100%);
@@ -364,20 +343,11 @@
   .flex-none {
     flex: none;
   }
-  .flex-grow {
-    flex-grow: 1;
-  }
   .grow {
     flex-grow: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-\[2\.5rem_1fr\] {
     grid-template-columns: 2.5rem 1fr;
@@ -442,10 +412,6 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-b-1 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
@@ -502,6 +468,9 @@
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
@@ -593,13 +562,6 @@
   .text-xprimary {
     color: var(--color-xprimary);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .placeholder\:text-2xl {
     &::placeholder {
       font-size: var(--text-2xl);
@@ -641,11 +603,6 @@
       display: block;
     }
   }
-  .smd\:flex {
-    @media (width >= 31.25rem) {
-      display: flex;
-    }
-  }
   .smd\:grid {
     @media (width >= 31.25rem) {
       display: grid;
@@ -654,6 +611,11 @@
   .smd\:hidden {
     @media (width >= 31.25rem) {
       display: none;
+    }
+  }
+  .smd\:h-30 {
+    @media (width >= 31.25rem) {
+      height: calc(var(--spacing) * 30);
     }
   }
   .smd\:h-screen {
@@ -689,24 +651,6 @@
   .smd\:gap-2 {
     @media (width >= 31.25rem) {
       gap: calc(var(--spacing) * 2);
-    }
-  }
-  .smd\:border {
-    @media (width >= 31.25rem) {
-      border-style: var(--tw-border-style);
-      border-width: 1px;
-    }
-  }
-  .smd\:border-r {
-    @media (width >= 31.25rem) {
-      border-right-style: var(--tw-border-style);
-      border-right-width: 1px;
-    }
-  }
-  .smd\:border-r-2 {
-    @media (width >= 31.25rem) {
-      border-right-style: var(--tw-border-style);
-      border-right-width: 2px;
     }
   }
   .smd\:p-1 {
@@ -901,11 +845,6 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-gradient-position {
   syntax: "*";
