@@ -22,7 +22,9 @@ Count border: #e74c3c
 
   /* breakpoint for 500px (31.25rem) */
   --breakpoint-smd: 31.25rem;
+  --breakpoint-cmd: 61.75rem;
   --breakpoint-mmd: 62.5rem;
+  --breakpoint-vlg: 79.0625rem;
 }
 
 /* .or {
