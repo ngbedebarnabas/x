@@ -14,11 +14,11 @@
     >
       <!-- nav -->
       <nav
-        class="w-full smd:w-[4.25rem] vlg:w-[18rem] p-3 smd:p-1 smd:pt-5 smd:grid-start-1 smd:grid-end-2 smd:h-screen smd:sticky smd:top-0 dark:smd:border-gray-800 smd:justify-self-end vlg:justify-self-start vlg:ml-7 smd:flex smd:flex-col smd:justify-between"
+        class="hidden smmd:block w-full smd:max-w-[4.25rem] vlg:w-[18rem] p-3 smd:p-1 smd:pt-5 smd:grid-start-1 smd:grid-end-2 smd:h-screen smd:sticky smd:top-0 dark:smd:border-gray-800 smd:justify-self-end vlg:justify-self-start vlg:ml-7 smd:flex smd:flex-col smd:justify-between items-end"
       >
         <!-- nav header -->
         <div
-          class="mb-1 flex justify-between smd:flex-col items-center vlg:items-start"
+          class="mb-1 max-w-[4.25rem] flex justify-between smd:flex-col items-center vlg:items-start"
         >
           <div class="smd:hidden">
             <img
@@ -528,22 +528,84 @@
         >
           <!-- Profile, banner and following details -->
           <div>
+            <!-- Profile handle and back button -->
+            <div
+              class="flex items-center gap-y-1 gap-x-10 dark:text-xlightext py-2 px-5"
+            >
+              <div>
+                <a href="home.html">
+                  <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    class="w-7 dark:hidden"
+                  >
+                    <g>
+                      <path
+                        d="M7.414 13l5.043 5.04-1.414 1.42L3.586 12l7.457-7.46 1.414 1.42L7.414 11H21v2H7.414z"
+                        fill="#000"
+                      ></path>
+                    </g>
+                  </svg>
+                  <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    class="w-7 hidden dark:block"
+                  >
+                    <g>
+                      <path
+                        d="M7.414 13l5.043 5.04-1.414 1.42L3.586 12l7.457-7.46 1.414 1.42L7.414 11H21v2H7.414z"
+                        fill="#fff"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div>
+                <div class="handlename font-bold flex items-center gap-x-1">
+                  Elon Musk
+                  <div class="verified-icon">
+                    <svg
+                      viewBox="0 0 22 22"
+                      aria-label="Verified account"
+                      role="img"
+                      class="w-5"
+                      data-testid="icon-verified"
+                      fill="#1d9bf0"
+                    >
+                      <g>
+                        <path
+                          d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="elonx">
+                    <img src="img/xlogo-sm.jpg" alt="ximage" class="w-4" />
+                  </div>
+                </div>
+
+                <span class="handle inline-block text-gray-500"
+                  >74.1K posts <span class="inline-block">.</span>
+                </span>
+              </div>
+            </div>
+
             <!-- banner -->
             <div>
               <img src="img/elonbanner.jpeg" alt="elon banner" />
             </div>
             <!--  Profile picture and icons-->
-            <div class="h-25 px-2 flex items-center justify-between">
+            <div class="px-2 flex flex-col xxs:flex-row xxs:justify-between">
               <!-- profile picture -->
-              <div class="-translate-y-2/5">
+              <div class="-mt-18 xxs:-mt-15">
                 <img
                   src="img/elon.JPG"
                   alt="profile picture"
-                  class="rounded-full w-35 inline-block border-4 border-white"
+                  class="rounded-full max-w-[6.6rem] inline-block border-4 border-white dark:border-none"
                 />
               </div>
               <!-- Icons and subscribe  -->
-              <div class="mt-4 flex gap-2 items-center self-start">
+              <div class="my-4 flex gap-2 items-center self-start">
                 <span
                   class="p-2 inline-block border-1 border-gray-300 rounded-full"
                 >
@@ -695,7 +757,8 @@
             <!-- profile following and details -->
             <div class="px-3">
               <div class="">
-                <span class="font-bold text-xl flex gap-1 items-center"
+                <span
+                  class="font-bold text-xl flex gap-1 items-center dark:text-xlightext"
                   >Elon Musk
 
                   <svg
@@ -720,9 +783,76 @@
                   />
                 </span>
 
-                <span class="text-gray-400 font-bold text-xs inline-block"
+                <span class="text-gray-400 font-semibold text-sm inline-block"
                   >@elonmusk</span
                 >
+              </div>
+              <span
+                class="mt-3 text-gray-400 font-semibold text-sm flex items-center"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="w-5 mr-1 dark:hidden"
+                >
+                  <g>
+                    <path
+                      d="M7 4V3h2v1h6V3h2v1h1.5C19.89 4 21 5.12 21 6.5v12c0 1.38-1.11 2.5-2.5 2.5h-13C4.12 21 3 19.88 3 18.5v-12C3 5.12 4.12 4 5.5 4H7zm0 2H5.5c-.27 0-.5.22-.5.5v12c0 .28.23.5.5.5h13c.28 0 .5-.22.5-.5v-12c0-.28-.22-.5-.5-.5H17v1h-2V6H9v1H7V6zm0 6h2v-2H7v2zm0 4h2v-2H7v2zm4-4h2v-2h-2v2zm0 4h2v-2h-2v2zm4-4h2v-2h-2v2z"
+                    ></path>
+                  </g>
+                </svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="w-5 mr-1 hidden dark:inline-block"
+                >
+                  <g>
+                    <path
+                      d="M7 4V3h2v1h6V3h2v1h1.5C19.89 4 21 5.12 21 6.5v12c0 1.38-1.11 2.5-2.5 2.5h-13C4.12 21 3 19.88 3 18.5v-12C3 5.12 4.12 4 5.5 4H7zm0 2H5.5c-.27 0-.5.22-.5.5v12c0 .28.23.5.5.5h13c.28 0 .5-.22.5-.5v-12c0-.28-.22-.5-.5-.5H17v1h-2V6H9v1H7V6zm0 6h2v-2H7v2zm0 4h2v-2H7v2zm4-4h2v-2h-2v2zm0 4h2v-2h-2v2zm4-4h2v-2h-2v2z"
+                      fill="#fff"
+                    ></path>
+                  </g>
+                </svg>
+                Joined June 2009
+              </span>
+
+              <div
+                class="mt-3 mb-3 text-gray-400 font-semibold text-sm flex items-center"
+              >
+                <span class="text-black font-bold mr-1 dark:text-xlightext"
+                  >1,083</span
+                >
+                <span class="mr-5">Following</span>
+                <span class="text-black font-bold mr-1 dark:text-xlightext"
+                  >219.6M</span
+                >
+                <span>Followers</span>
+              </div>
+
+              <div
+                class="mt-3 mb-5 text-gray-500 text-sm flex items-center gap-x-7"
+              >
+                <div class="flex">
+                  <img
+                    src="img/gmailavatar.jpg"
+                    alt="profile image"
+                    class="w-8 rounded-full border-1 border-gray-300"
+                  />
+                  <img
+                    src="img/rcnlagos.jpg"
+                    alt="profile image"
+                    class="-ml-4 w-8 rounded-full border-1 border-gray-300"
+                  />
+                  <img
+                    src="img/wesbos.jpg"
+                    alt="profile image"
+                    class="-ml-4 w-8 rounded-full border-1 border-gray-300"
+                  />
+                </div>
+                <span class="text-sm">
+                  Followed by Zach Yadegari, Deborah Ocheido, and 36 others you
+                  follow
+                </span>
               </div>
             </div>
           </div>
@@ -842,7 +972,7 @@
                 <svg
                   viewBox="0 0 24 24"
                   aria-hidden="true"
-                  class="w-4 inline-block"
+                  class="w-4 inline-block dark:hidden"
                 >
                   <g>
                     <path
@@ -850,13 +980,27 @@
                     ></path>
                   </g>
                 </svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="w-4 hidden dark:inline-block"
+                >
+                  <g>
+                    <path
+                      d="M7 4.5C7 3.12 8.12 2 9.5 2h5C15.88 2 17 3.12 17 4.5v5.26L20.12 16H13v5l-1 2-1-2v-5H3.88L7 9.76V4.5z"
+                      fill="#fff"
+                    ></path>
+                  </g>
+                </svg>
 
                 Pinned
               </span>
               <!-- post content -->
-              <div class="my-4 text-gray-500 dark:text-xlightext">
+              <div class="my-4 dark:text-xlightext">
                 <div class="mb-3">Super yes FTW!!</div>
-                <div class="p-3 border-2 border-gray-200 rounded-2xl">
+                <div
+                  class="p-3 border-2 border-gray-200 dark:border-gray-800 rounded-2xl"
+                >
                   <div
                     class="profiledetails flex items-center gap-1 dark:text-xlightext"
                   >
@@ -1048,7 +1192,9 @@
               <!-- post content -->
               <div class="my-4 text-gray-500 dark:text-xlightext">
                 <div class="mb-3">🔥🔥</div>
-                <div class="p-3 border-2 border-gray-200 rounded-2xl">
+                <div
+                  class="p-3 border-2 border-gray-200 dark:border-gray-800 rounded-2xl"
+                >
                   <div
                     class="profiledetails text-gray-500 flex items-center gap-1 dark:text-xlightext"
                   >
