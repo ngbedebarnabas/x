@@ -5,6 +5,6 @@
   },
   "scripts": {
     "compile-css": "npx @tailwindcss/cli -i ./css/input.css -o ./css/style.css --watch",
-    "update-repo": "git add . && git commit -m 'update project' && git push origin main"
+    "update-repo": "git add . && git commit -m 'Complete project' && git push origin main"
   }
 }
