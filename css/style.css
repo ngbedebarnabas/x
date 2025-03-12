@@ -422,6 +422,9 @@
   .max-w-\[21\.875rem\] {
     max-width: 21.875rem;
   }
+  .max-w-\[31\.25rem\] {
+    max-width: 31.25rem;
+  }
   .max-w-\[37\.5rem\] {
     max-width: 37.5rem;
   }
@@ -951,11 +954,6 @@
   .mmd\:flex {
     @media (width >= 62.5rem) {
       display: flex;
-    }
-  }
-  .mmd\:w-2\/5 {
-    @media (width >= 62.5rem) {
-      width: calc(2/5 * 100%);
     }
   }
   .mmd\:w-3\/5 {
